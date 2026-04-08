@@ -88,10 +88,29 @@ body::after {
   color: var(--muted);
 }
 
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   position: relative;
   padding: 0;
   overflow: hidden;
+}
+
+.hero h1 {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.hero .intro {
+  animation: fade-up 0.8s ease-out 0.15s both;
 }
 
 .hero::before {
@@ -159,7 +178,43 @@ h1 {
 }
 
 .section {
-  margin-top: 4rem;
+  margin-top: 6rem;
+}
+
+.section:nth-of-type(even) {
+  margin-left: 4rem;
+}
+
+@media (max-width: 760px) {
+  .section:nth-of-type(even) {
+    margin-left: 0;
+  }
+}
+
+.section h2 {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.section > *:not(h2) {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.section:nth-of-type(1) h2 { animation-delay: 0.25s; }
+.section:nth-of-type(1) > *:not(h2) { animation-delay: 0.4s; }
+.section:nth-of-type(2) h2 { animation-delay: 0.45s; }
+.section:nth-of-type(2) > *:not(h2) { animation-delay: 0.6s; }
+.section:nth-of-type(3) h2 { animation-delay: 0.65s; }
+.section:nth-of-type(3) > *:not(h2) { animation-delay: 0.8s; }
+.section:nth-of-type(4) h2 { animation-delay: 0.85s; }
+.section:nth-of-type(4) > *:not(h2) { animation-delay: 1.0s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1,
+  .hero .intro,
+  .section h2,
+  .section > *:not(h2) {
+    animation: none;
+  }
 }
 
 .section h2 {
@@ -168,6 +223,14 @@ h1 {
   font-size: 1.6rem;
   letter-spacing: -0.02em;
   margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.oscar-logo {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .section h3 {
