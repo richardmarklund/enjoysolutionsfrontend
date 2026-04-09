@@ -6,91 +6,146 @@
     <title>Enjoy Solutions AB</title>
     <meta
       name="description"
-      content="Enjoy Solutions AB is a Swedish software company building Oscar, an AI-powered personal assistant for iPhone, and offering software engineering consultancy."
+      content="Enjoy Solutions AB is a Swedish software company building Oscar, an AI-powered personal assistant for iPhone."
     />
     <meta name="theme-color" content="#f6f1e8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <p class="brand-name">Enjoy Solutions AB</p>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="brand-name">Enjoy Solutions</p>
         <nav class="site-nav">
+          <a href="#oscar">Oscar</a>
           <a href="#about">About</a>
-          <a href="#product">Oscar</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <a href="#main" class="skip-link">Skip to content</a>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h1>Your AI&nbsp;agent for&nbsp;iPhone</h1>
+            <p class="hero-sub">
+              Oscar browses the web, manages your notes, reminders, calendar
+              and email &mdash; and keeps learning about you over time.
+            </p>
+            <p class="hero-byline">
+              Built by Enjoy Solutions in Gothenburg, Sweden.
+            </p>
+          </div>
+          <div class="hero-phones">
+            <div class="phone phone--left">
+              <img src="oscar-chat.png" alt="Oscar Chat screen showing conversation topics" width="390" height="844" />
+            </div>
+            <div class="phone phone--center">
+              <img src="oscar-notes.jpeg" alt="Oscar Notes screen with organized categories" width="390" height="844" />
+            </div>
+            <div class="phone phone--right">
+              <img src="oscar-reminders.png" alt="Oscar Reminders screen with scheduled tasks" width="390" height="844" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <main id="main">
-        <section class="hero">
-          <h1>Enjoy Solutions</h1>
-          <p class="intro">
-            A Swedish software company building intelligent tools that simplify
-            everyday life — and helping other businesses do the same.
-          </p>
-        </section>
+      <section id="oscar" class="features-section">
+        <div class="container">
+          <h2 class="section-title">
+            <img src="oscar-logo.png" alt="Oscar logo" class="oscar-logo" />
+            What Oscar can do
+          </h2>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>Web browsing</h3>
+              <p>Research topics, monitor listings, follow your favourite sports teams, and more.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Smart reminders</h3>
+              <p>Recurring notifications and scheduled follow-ups that keep you on track.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Memory</h3>
+              <p>Remembers context across conversations so you never have to repeat yourself.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Calendar</h3>
+              <p>Syncs with your calendar to plan, schedule, and stay on top of your day.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Email</h3>
+              <p>Draft, summarize, and manage emails directly through Oscar.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Notes</h3>
+              <p>Save anything and retrieve it instantly when you need it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="about" class="section">
-          <h2>About</h2>
-          <p>
-            Enjoy Solutions is a one-person software company in Gothenburg,
-            Sweden, run by Richard Marklund. Before starting Enjoy Solutions,
-            Richard spent 10+ years building backend services for high-traffic
-            systems in the automotive industry.
-          </p>
-          <p>
-            Now he's building Oscar — an AI agent for iPhone.
-          </p>
-        </section>
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <div class="about-content">
+            <p>
+              Enjoy Solutions is a one-person software company in Gothenburg,
+              Sweden, run by Richard Marklund. Before starting Enjoy Solutions,
+              Richard spent 10+ years building backend services for high-traffic
+              systems in the automotive industry.
+            </p>
+            <p>Now he's building Oscar &mdash; an AI agent for iPhone.</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="product" class="section">
-          <h2><img src="oscar-logo.png" alt="Oscar logo" class="oscar-logo" />Oscar</h2>
-          <p>
-            Oscar is an AI agent for iPhone that goes beyond chat. It browses
-            the web, saves notes, manages your reminders, syncs with your
-            calendar and email — and keeps learning about you over time.
-          </p>
-          <ul class="feature-list">
-            <li>Web browsing — research, monitor listings, follow your favourite sports teams, and more</li>
-            <li>Smart reminders — recurring notifications and scheduled follow-ups</li>
-            <li>Cutting-edge memory — Oscar remembers context across conversations so you never repeat yourself</li>
-            <li>Calendar integration — syncs with your calendar to plan, schedule, and stay on top of your day</li>
-            <li>Email integration — draft, summarize, and manage emails directly through Oscar</li>
-            <li>Notes and recall — save anything and retrieve it instantly when you need it</li>
-          </ul>
-        </section>
-
-        <section id="services" class="section">
-          <h2>Services</h2>
-          <p>
+      <section id="services" class="services-section">
+        <div class="container">
+          <h2 class="section-title">Services</h2>
+          <p class="section-intro">
             Beyond our own products, Enjoy Solutions offers software
             engineering consultancy with deep expertise in:
           </p>
-          <ul class="feature-list">
-            <li>Backend systems for high-traffic environments</li>
-            <li>iOS and Android app development</li>
-            <li>AI integration and automation</li>
-            <li>System architecture and scalability</li>
-          </ul>
-          <p>
-            We work with companies that need reliable, well-engineered
-            software — whether that means building from scratch or
-            strengthening what already exists.
-          </p>
-        </section>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Backend systems</h3>
+              <p>High-traffic environments and scalable architecture.</p>
+            </div>
+            <div class="service-card">
+              <h3>Mobile apps</h3>
+              <p>iOS and Android development.</p>
+            </div>
+            <div class="service-card">
+              <h3>AI integration</h3>
+              <p>Automation and intelligent features.</p>
+            </div>
+            <div class="service-card">
+              <h3>System architecture</h3>
+              <p>Scalability and reliability from the ground up.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="section">
-          <h2>Contact</h2>
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
           <div class="contact-grid">
-            <div>
+            <div class="contact-card">
               <h3>Email</h3>
               <p><a href="mailto:richard@enjoysolutions.se">richard@enjoysolutions.se</a></p>
             </div>
-            <div>
+            <div class="contact-card">
               <h3>Address</h3>
               <p>
                 Enjoy Solutions AB<br />
@@ -100,13 +155,15 @@
               </p>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="site-footer">
+    <footer class="site-footer">
+      <div class="container footer-inner">
         <a href="mailto:richard@enjoysolutions.se">richard@enjoysolutions.se</a>
         <p>&copy; 2026 Enjoy Solutions AB</p>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
